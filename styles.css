@@ -1,0 +1,178 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 250px; /* Adjust this size as needed */
+}
+
+header {
+    position: relative;
+    max-width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    bottom: 450px;
+    left: 20px;
+    color: white;
+    font-size: 3.5rem;
+    padding: 10px 40px;
+    z-index: 2; 
+}
+
+.text-below {
+    position: absolute;
+    bottom: 380px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px 40px;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.mySlides .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+
+}
+
+.movie-row {
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-row:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.poster-cell {
+    width: 30%;
+    padding: 1rem;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-cell {
+    padding: 7.5rem 2.5rem;
+    margin-top: 2rem;
+    vertical-align: top;
+}
+
+.movie-title {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: #333;
+    font-family: "Russo One", sans-serif;
+}
+
+.movie-genre {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.movie-description {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.watch-now-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background-color: #f8c439;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.watch-now-btn:hover {
+    background-color: #e0ad21;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+.gotop{
+    position: fixed;
+    right: 70px;
+    bottom: 5px;
+}
+.gotop a{
+    opacity: 0.8;
+}
+.gotop a:hover{
+    opacity: 1;
+}
+/* END
